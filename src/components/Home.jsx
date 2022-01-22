@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <main>
       <h1 className="text-neutral-50 font-bold text-h1">Hi, I am Frank 👋</h1>
-      <h2 className="text-neutral-100 font-medium text-h2">
+      <h2 className="text-neutral-100 font-medium text-h2 mt-1">
         Full-Stack Developer
       </h2>
       <p className="text-neutral-200 text-normal mt-8">

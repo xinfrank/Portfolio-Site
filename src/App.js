@@ -6,7 +6,7 @@ import { Skills } from "./components/Skills";
 
 function App() {
   return (
-    <div className="font-Raleway tracking-wider bg-background-900 h-screen w-screen">
+    <div className="font-Poppins tracking-wider bg-background-900 h-screen w-screen">
       <div className="max-w-4xl m-auto px-5">
         <Router>
           <Navbar />

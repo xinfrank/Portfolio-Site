@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Raleway: ["Raleway", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
         normal: "30px",

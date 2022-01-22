@@ -15,7 +15,11 @@ export const Navbar = () => {
   return (
     <nav className="flex text-neutral-50 font-semibold text-normal h-40 items-center">
       <Link to="/">
-        <ul className="mr-16">{"<Frank />"}</ul>
+        <ul className="mr-16">
+          <span className="font-mono">{"<"}</span>
+          {"Frank"}
+          <span className="font-mono">{"/>"}</span>
+        </ul>
       </Link>
       <Link to="/projects">
         <ul className="hidden xs:block mr-16">Projects</ul>
