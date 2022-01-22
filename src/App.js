@@ -1,8 +1,11 @@
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import { Home } from "./components/Home";
-import { Projects } from "./components/Projects";
-import { Skills } from "./components/Skills";
+import { LoadSpinner } from "./components/LoadSpinner";
+
+const Home = lazy(() => import("./components/Home"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
 
 function App() {
   return (
@@ -10,12 +13,14 @@ function App() {
       <div className="font-Poppins tracking-wider max-w-4xl m-auto px-5 bg-background-900">
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-          </Routes>
-          <div className="h-5"></div>
+          <Suspense fallback={<LoadSpinner />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/skills" element={<Skills />} />
+            </Routes>
+          </Suspense>
+          <div className="h-5" />
         </Router>
       </div>
     </div>

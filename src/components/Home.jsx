@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { ImMail4 } from "react-icons/im";
 
-export const Home = () => {
+const Home = () => {
   return (
     <main>
       <h1 className="text-neutral-50 font-bold text-h1">Hi, I am Frank 👋</h1>
@@ -53,3 +53,5 @@ export const Home = () => {
     </main>
   );
 };
+
+export default Home;
