@@ -41,12 +41,16 @@ export const Navbar = () => {
         />
         {toggleNav && (
           <ClickAwayListener onClickAway={handleClickOutside}>
-            <div className="absolute xs:hidden top-10 right-0.5 w-48 h-28 bg-background-900 border border-neutral-50 rounded-md">
+            <div className="absolute xs:hidden top-10 right-0.5 w-48 bg-background-900 border border-neutral-50 rounded-md z-10">
               <Link className="flex justify-center" to="/projects">
-                <ul className="xs:hidden block text-2xl py-4">Projects</ul>
+                <ul className="xs:hidden block text-3xl h-16 leading-[4rem] px-6">
+                  Projects
+                </ul>
               </Link>
               <Link className="flex justify-center" to="/skills">
-                <ul className="xs:hidden block text-2xl pb-4">Skills</ul>
+                <ul className="xs:hidden block text-3xl h-16 leading-[4rem] px-6">
+                  Skills
+                </ul>
               </Link>
             </div>
           </ClickAwayListener>
