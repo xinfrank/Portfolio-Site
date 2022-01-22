@@ -23,7 +23,12 @@ const Home = () => {
         playing chess.
       </p>
       <section className="flex mt-12">
-        <a href="https://github.com/xinfrank" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/xinfrank"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="link to Github"
+        >
           <BsGithub
             className="mr-7 hover:scale-95"
             fill={"#E5E5E5"}
@@ -34,6 +39,7 @@ const Home = () => {
           href="https://www.linkedin.com/in/xfrank/"
           target="_blank"
           rel="noreferrer"
+          aria-label="link to LinkedIn"
         >
           <BsLinkedin
             className="mr-7 hover:scale-95"
@@ -41,7 +47,10 @@ const Home = () => {
             size={35}
           />
         </a>
-        <a href={"mailto:frankxin.private@gmail.com"}>
+        <a
+          href={"mailto:frankxin.private@gmail.com"}
+          aria-label="button to send e-mail"
+        >
           <ImMail4 className="hover:scale-95" fill={"#E5E5E5"} size={36} />
         </a>
       </section>

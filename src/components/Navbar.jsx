@@ -15,17 +15,17 @@ export const Navbar = () => {
   return (
     <nav className="flex text-neutral-50 font-semibold text-normal h-40 items-center">
       <Link to="/">
-        <ul className="mr-16">
+        <p className="mr-16">
           <span className="font-mono">{"<"}</span>
           {"Frank"}
           <span className="font-mono">{"/>"}</span>
-        </ul>
+        </p>
       </Link>
       <Link to="/projects">
-        <ul className="hidden xs:block mr-16">Projects</ul>
+        <p className="hidden xs:block mr-16">Projects</p>
       </Link>
       <Link to="/skills">
-        <ul className="hidden xs:block">Skills</ul>
+        <p className="hidden xs:block">Skills</p>
       </Link>
       <div className="relative ml-auto">
         <AiOutlineMenu
@@ -43,14 +43,14 @@ export const Navbar = () => {
           <ClickAwayListener onClickAway={handleClickOutside}>
             <div className="absolute xs:hidden top-10 right-0.5 w-48 bg-background-900 border border-neutral-50 rounded-md z-10">
               <Link className="flex justify-center" to="/projects">
-                <ul className="xs:hidden block text-3xl h-16 leading-[4rem] px-6">
+                <p className="xs:hidden block text-3xl h-16 leading-[4rem] px-6">
                   Projects
-                </ul>
+                </p>
               </Link>
               <Link className="flex justify-center" to="/skills">
-                <ul className="xs:hidden block text-3xl h-16 leading-[4rem] px-6">
+                <p className="xs:hidden block text-3xl h-16 leading-[4rem] px-6">
                   Skills
-                </ul>
+                </p>
               </Link>
             </div>
           </ClickAwayListener>
