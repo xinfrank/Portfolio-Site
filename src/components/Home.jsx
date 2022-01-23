@@ -5,7 +5,7 @@ import { ImMail4 } from "react-icons/im";
 const Home = () => {
   return (
     <main id="home">
-      <h1 className="text-neutral-50 font-bold text-h1 mt-5">
+      <h1 className="text-neutral-50 font-bold text-h1 mt-10">
         Hi, I am Frank 👋
       </h1>
       <h2 className="text-neutral-100 font-medium text-h2 mt-1">

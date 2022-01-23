@@ -10,7 +10,7 @@ const Skills = () => {
   });
   const [category, setCategory] = useState("frontend");
   return (
-    <section id="skills" className="mt-16">
+    <section id="skills" className="mt-10">
       <h1 className="text-neutral-50 text-h1 font-bold text-center">Skills</h1>
       <div className="flex w-full justify-center mt-2 flex-wrap">
         <button
