@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { ImMail4 } from "react-icons/im";
 
 const Home = () => {
   return (
-    <main>
-      <h1 className="text-neutral-50 font-bold text-h1">Hi, I am Frank 👋</h1>
+    <main id="home">
+      <h1 className="text-neutral-50 font-bold text-h1 mt-5">
+        Hi, I am Frank 👋
+      </h1>
       <h2 className="text-neutral-100 font-medium text-h2 mt-1">
         Full-Stack Developer
       </h2>
@@ -22,7 +23,7 @@ const Home = () => {
         . Outside of programming, I love listening to jazz, watching anime, and
         playing chess.
       </p>
-      <section className="flex mt-12">
+      <section className="flex mt-10">
         <a
           href="https://github.com/xinfrank"
           target="_blank"
@@ -32,7 +33,7 @@ const Home = () => {
           <BsGithub
             className="mr-7 hover:scale-95"
             fill={"#E5E5E5"}
-            size={35}
+            size={32}
           />
         </a>
         <a
@@ -44,21 +45,19 @@ const Home = () => {
           <BsLinkedin
             className="mr-7 hover:scale-95"
             fill={"#E5E5E5"}
-            size={35}
+            size={32}
           />
         </a>
         <a
           href={"mailto:frankxin.private@gmail.com"}
           aria-label="button to send e-mail"
         >
-          <ImMail4 className="hover:scale-95" fill={"#E5E5E5"} size={36} />
+          <ImMail4 className="hover:scale-95" fill={"#E5E5E5"} size={33} />
         </a>
       </section>
-      <Link to="/projects">
-        <button className="w-48 h-16 bg-background-button rounded-md text-neutral-50 text-xl font-semibold mt-10">
-          My Projects →
-        </button>
-      </Link>
+      <button className="w-48 h-16 bg-background-button rounded-md text-neutral-50 text-xl font-semibold mt-10">
+        My Projects →
+      </button>
     </main>
   );
 };

@@ -15,13 +15,14 @@ module.exports = {
         Poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
-        normal: "30px",
-        h1: "48px",
-        h2: "32px",
+        normal: "24px",
+        h1: "40px",
+        h2: "28px",
       },
       colors: {
         background: {
           button: "#7050EE",
+          800: "#2B3037",
           900: "#20252B",
         },
       },
