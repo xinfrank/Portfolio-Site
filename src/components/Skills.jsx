@@ -31,7 +31,7 @@ const Skills = () => {
         </button>
         <button
           className={
-            "w-32 h-12 rounded-3xl font-semibold mr-5 " +
+            "w-32 h-12 rounded-3xl font-semibold mr-5 button-toggle-2 " +
             (buttonToggles.btn2
               ? "bg-teal-700 text-neutral-100"
               : "bg-background-800 text-neutral-400")
@@ -47,7 +47,7 @@ const Skills = () => {
         </button>
         <button
           className={
-            "w-32 h-12 rounded-3xl font-semibold button-toggle " +
+            "w-32 h-12 rounded-3xl font-semibold button-toggle-3 " +
             (buttonToggles.btn3
               ? "bg-teal-700 text-neutral-100"
               : "bg-background-800 text-neutral-400")

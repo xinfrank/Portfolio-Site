@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { Navbar } from "./components/Navbar";
 import { LoadSpinner } from "./components/LoadSpinner";
@@ -11,11 +12,22 @@ function App() {
     <div className="bg-background-900 min-h-screen min-w-screen font-Poppins tracking-wider">
       <Navbar />
       <div className="max-w-4xl m-auto px-5 bg-background-900">
-        <Suspense fallback={<LoadSpinner />}>
-          <Home />
-          <Skills />
-          <Projects />
-        </Suspense>
+        <Router>
+          <Suspense fallback={<LoadSpinner />}>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Home />
+                    <Skills />
+                    <Projects />
+                  </>
+                }
+              ></Route>
+            </Routes>
+          </Suspense>
+        </Router>
         <div className="h-96" />
       </div>
     </div>
